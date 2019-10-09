@@ -32,8 +32,8 @@ Behavioural Biometrics based on Keystroke Dynamics
 ### Tasks
 1. Website - Create the website (Estimated Duration - 12 days) (Priority 9.5): Ben Minikwu
 2. Key Listener - Create Key Listener to collect keystroke timings  (Estimated Duration - 10 days) (Priority 10): Surya Kakria
--2.1 Database - Store collected timings (Estimated Duration - 5 days) (Priority 9.5): Armin Abazari
--2.2 Machine Learning - Create Machine learning algorithms to study the timings (Estimated Duration - 24 days) (Priority 8.5): Affad Shaikh, Surya Kakria, Shervon Thomas, Armin Abazari, Ben Minikwu
+- 2.1 Database - Store collected timings (Estimated Duration - 5 days) (Priority 9.5): Armin Abazari
+- 2.2 Machine Learning - Create Machine learning algorithms to study the timings (Estimated Duration - 24 days) (Priority 8.5): Affad Shaikh, Surya Kakria, Shervon Thomas, Armin Abazari, Ben Minikwu
 3. Encryption - Encrypt the database that contains the timings  (Estimated Duration - 5 days) (Priority 6): Armin Abazari
 4+5.  Secondary Authentication part 1 - Create a page that has a series of images.  (Estimated Duration - 3 days) (Priority 7): Shervon Thomas
 6. Secondary Authentication part 2 - Allow a user to choose a number of images in a specific order and compare them to the existing pattern.  (Estimated Duration 12 days) (Priority 7): Shervon Thomas, Surya Kakria
@@ -48,15 +48,15 @@ Behavioural Biometrics based on Keystroke Dynamics
 
 ### 2 Iterations for Milestone 1
 Iteration 1 (2 Weeks):
--Create the website
--Secondary Authentication Part 1
+- Create the website
+- Secondary Authentication Part 1
 
 Iteration 2 (2 Weeks):
--Key Listener
--Database
+- Key Listener
+- Database
 
 ### Velocity
--Timeline: 4 Weeks to Milestone 1, 5 Weeks to Milestone 2
--Starting Velocity: 40%
--Total: 10 hours per week
--Current: 4 hours per week
+- Timeline: 4 Weeks to Milestone 1, 5 Weeks to Milestone 2
+- Starting Velocity: 40%
+- Total: 10 hours per week
+- Current: 4 hours per week
