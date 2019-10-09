@@ -19,7 +19,7 @@ Behavioural Biometrics based on Keystroke Dynamics
 
 ### User Stories:
 1. Website: As a user, I want to log into the website without worrying about someone else seeing and using my password.  (Estimated Time - 10 days) (Priority 10)
-2. Keystroke Dynamics: As a user, I want the software to study my typing pattern when I register on the website.  (Estimated Time - 25 days) (Priority 10)
+2. Keystroke Dynamics: As a user, I want the software to study my typing pattern when I register on the website.  (Estimated Time - 20 days) (Priority 10)
 3. Encryption: As a user, I want my typing pattern data to be secured. (Estimated Time - 2 days) (Priority 20)
 4. Authentication Phase 1: As a user, I want to be able to use a secondary authentication to login to the website if I am unable to match the typing pattern. (Estimated Time - 2 days) (Priority 30)
 5. Authentication Phase 2: As a user, I want to see the secondary authentication showing just a set of images that I choose from. (Estimated Time - 4 days) (Priority 30)
