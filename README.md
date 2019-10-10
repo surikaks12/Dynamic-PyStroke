@@ -73,6 +73,6 @@ Iteration 2 (2 Weeks):
 - Current: 18 hours per week
 
 ### Burndown Chart
-
+Uploaded file in Repository called "Burndown-Chart.xlsm"
 ### Meeting Minutes
 Uploaded file in Repository called "PD Meeting Minutes.docx"
