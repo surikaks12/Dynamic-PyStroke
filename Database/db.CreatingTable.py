@@ -11,16 +11,14 @@ def CreateTable():
 
 
     ##########Creating columns in the dababase########
+    
     cur = conn.cursor()
     cur.execute("""
 
-    CREATE TABLE Users 
+    CREATE TABLE Users
         (
             Username VARCHAR(50) NOT NULL,
-            Password VARCHAR(50) NOT NULL    
+            Password VARCHAR(50) NOT NULL
         )
 
     """)
-
-
-

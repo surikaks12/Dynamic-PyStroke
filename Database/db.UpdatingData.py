@@ -10,6 +10,7 @@ def UpdateData():
     print ('Databse connected successfully')
 
     #########Updating Data############
+    
     cur = conn.cursor()
 
     cur.execute("UPDATE Users SET Password = 'Ben@2019' WHERE Username = 'Ben'")

@@ -10,6 +10,7 @@ def InsertData():
     print ('Databse connected successfully')
 
     #########Insert into the table############
+    
     cur = conn.cursor()
 
     cur.execute("INSERT INTO Users (Username, Password) VALUES('Ben', '@Ben2019')")

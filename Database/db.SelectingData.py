@@ -10,6 +10,7 @@ def SelectData():
     print ('Databse connected successfully')
 
     #########Selecting Data############
+    
     cur = conn.cursor()
 
     cur.execute("SELECT username, password FROM Users")
