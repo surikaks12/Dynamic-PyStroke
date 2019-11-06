@@ -42,9 +42,9 @@
   </nav>
   <br>
   <br>
- 
+
       <!-- Login Form Section -->
-      <section class="page-section"> 
+      <section class="page-section">
 
       <div class="container d-flex justify-content-center">
         <div class="card-deck col-6">
@@ -60,14 +60,46 @@
                 <div class="valid-feedback">Valid.</div>
                 <div class="invalid-feedback">Please fill out this field.</div>
               </div>
-              
+
               <div class="form-group">
                 <label for="Password1">Password</label>
-                <input type="password" onkeydown="keyDownFunction(event)" class="form-control" id="Password1" placeholder="Password" required>
+                <input type="password" onkeydown="keyDownFunction(event)" onkeyup="keyUpFunction(event)" class="form-control" id="Password1" placeholder="Password" required>
                 <script>
+                var arr = [];
                 function keyDownFunction(event) {
                   var x = event.key;
-                  window.alert(x + " was pressed!");
+                  if(event.which == 13 || event.keyCode == 13)
+                  {
+                    //window.alert("Enter pressed");
+                    sender();
+                  }
+                  var n = window.performance.now();
+                  x = x + " keyDown " + n;
+                  //window.alert(x + " was pressed!");
+                }
+                function keyUpFunction(event) {
+                  var x = event.key;
+                  var n = window.performance.now();
+                  x = x + " keyUp " + n;
+                }
+                function sender() {
+                  const textToBLOB = new Blob([arr.toString()], { type: 'text/plain' });
+                  const sFileName = 'SuryaOutputabc.txt';	   // The file to save the data.
+
+                  let newLink = document.createElement("a");
+                  newLink.download = sFileName;
+
+                  if (window.webkitURL != null) {
+                      newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+                  }
+                  else {
+                      newLink.href = window.URL.createObjectURL(textToBLOB);
+                      newLink.style.display = "none";
+                      document.body.appendChild(newLink);
+                  }
+
+                  newLink.click();
+                  window.alert(arr.toString());
                 }
                 </script>
                 <div class="valid-feedback">Valid.</div>
@@ -75,28 +107,28 @@
               </div>
 
               <button type="submit" class="btn btn-lg btn-block btn-primary">Submit</button>
-            
+
             </form>
             <br>
 
             <div>
                 <small id="emailHelp" class="form-text text-muted d-flex justify-content-center"><a href="http://127.0.0.1:8000/dynamicpystroke/register/">Don't have an account? Register</a></small>
-            </div>  
-              
             </div>
-            
-          
+
+            </div>
+
+
     </div>
             <div class"d-flex justify-content-center"><small id="emailHelp" class="form-text text-muted text-center">Our keystroke pattern recognition system will analyze your typing pattern as you enter your password.</small>
             </div>
-    
+
     </div>
   </section>
 
 
 
- 
- 
+
+
 
   <!-- Copyright Section -->
   <section class="copyright py-4 text-center text-white">
@@ -112,8 +144,8 @@
     </a>
   </div>
 
- 
-  
+
+
 
   <!-- Bootstrap core JavaScript -->
   <script src="{% static 'dynamicpystroke/vendor/jquery/jquery.min.js' %}"></script>
