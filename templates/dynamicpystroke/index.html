@@ -1,0 +1,332 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Dynamic PyStroke - Keystrokes dynamic</title>
+
+  <!-- Custom fonts for this theme -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- Theme CSS -->
+  <link href="{% static 'dynamicpystroke/css/freelancer.min.css' %}" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"> <img class="mb-2" src="{% static 'dynamicpystroke/img/dynamicpystrokelogo.svg' %}" alt="" width="68" height="48"> Dynamic PyStroke</a>
+      <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#howitworks">How it Works</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#team">Team Members</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#testimonials">Testimonials</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <br>
+  <!-- Masthead -->
+  <header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+
+      <!-- Masthead Image -->
+      <img src="{% static 'dynamicpystroke/img/keystroke.svg' %}" alt="">
+
+      <!-- Masthead Heading -->
+      <br>
+      <h2 class="page-section-heading text-center  text-white mb-0">KeyStroke Dynamics</h2>
+
+      
+
+      <!-- Masthead Subheading -->
+      <p class="masthead-subheading font-weight-light mb-0">Keystroke Pattern Recognition Authentication</p>
+
+    </div>
+  </header>
+
+
+  <!-- How it Works Section -->
+  <section class="page-section" id="howitworks">
+    <div class="container">
+
+      <!-- How it Works Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">How it Works</h2>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- How it Works Section Content -->
+      <div class="row">
+        <div class="col-lg-4 ml-auto">
+          <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
+        </div>
+        <div class="col-lg-4 mr-auto">
+          <p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
+        </div>
+      </div>
+
+      <!-- How it Works Section Button -->
+      <div class="text-center mt-4">
+        <a class="btn btn-xl btn btn-primary" href="http://127.0.0.1:8000/dynamicpystroke/login/">
+          <i class="fas fa-download mr-2"></i>
+          Demo!
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  
+<!-- Dynamic PyStroke Teams -->
+<section class="page-section bg-light" id="team">
+  <h2 class="text-center text-dark  mb-0">Team Members</h2>
+  <br>
+  
+  <div class="container member">
+
+    <div class="row d-flex justify-content-center">
+      <br>
+      <div class=".col-sm-6 card" style="width:300px" >
+        <img class="card-img-top" src="{% static 'dynamicpystroke/img/team/avatar.png' %}" alt="Surya Kakria" style="width:100%">
+        <div class="card-body text-center text-dark">
+          <h5 class="card-title">Surya Kakria</h5>
+          <p class="card-text">Backend Developer</p>
+        </div>
+      </div>
+
+      <div class=".col-sm-6 card" style="width:300px" >
+        <img class="card-img-top" src="{% static 'dynamicpystroke/img/team/ben.png' %}" alt="Ben Minikwu" style="width:100%">
+        <div class="card-body text-center text-dark">
+          <h5 class="card-title">Ben Minikwu</h5>
+          <p class="card-text">Frontend Developer</p>
+        </div>
+      </div>
+
+      <div class=".col-sm-6 card" style="width:300px" >
+        <img class="card-img-top" src="{% static 'dynamicpystroke/img/team/avatar.png' %}" alt="Armin Abazari" style="width:100%">
+        <div class="card-body text-center text-dark">
+          <h5 class="card-title">Armin Abazari</h5>
+          <p class="card-text">Database Administrator</p>
+        </div>
+      </div>
+    </div>
+
+      <br>
+
+      <div class="row d-flex justify-content-center">
+
+          <div class=".col-sm-6 card" style="width:300px" >
+            <img class="card-img-top" src="{% static 'dynamicpystroke/img/team/avatar.png' %}" alt="Shervon Thomas" style="width:100%">
+            <div class="card-body text-center text-dark">
+              <h5 class="card-title">Shervon Thomas</h5>
+              <p class="card-text">Project Manager</p>
+            </div>
+          </div>
+
+          <div class=".col-sm-6 card" style="width:300px" >
+            <img class="card-img-top" src="{% static 'dynamicpystroke/img/team/avatar.png' %}" alt="Affad Shaikh" style="width:100%">
+            <div class="card-body text-center text-dark">
+              <h5 class="card-title">Affad Shaikh</h5>
+              <p class="card-text">Business Analyst</p>
+            </div>
+          </div>
+
+      </div> 
+  </div>
+</section>
+
+
+  <!-- Section: Testimonials -->
+<section class="container page-section text-center my-4" id="testimonials">
+
+  <!-- Section heading -->
+  <h2 class="h1-responsive font-weight-bold my-4">Testimonials</h2>
+  <!-- Section description -->
+  <p class="dark-grey-text w-responsive mb-5">Testimonials from some of our Dynamic PyStroke users</p>
+  <br>
+  <!--Grid row-->
+  <div class="row text-center">
+
+    <!--Grid column-->
+    <div class="col-md-4 mb-md-0 mb-4">
+
+      <div class="testimonial">
+        <!--Avatar-->
+        <div class="avatar mx-auto">
+          <img src="https://www.cgu.edu/wp-content/uploads/2018/08/Chipidza1024x1024Web-600x600.jpg" width="150" height="150" class="rounded-circle z-depth-1 img-fluid">
+        </div>
+        <!--Content-->
+        <h6 class="font-weight-bold dark-grey-text mt-4">Prof. Wallace Chipidza</h6>
+        <h6 class="font-weight-normal blue-text my-3">Advisor</h6>
+        <p class="font-weight-normal dark-grey-text">
+          <i class="fas fa-quote-left pr-2"></i>Dynamic PyStroke is one of the best teams, and there tech is very interesting and inovative. They are definitely getting an A+.</p>
+        <!--Review-->
+        <div class="orange-text">
+          <i class="fas fa-star"> </i>
+          <i class="fas fa-star"> </i>
+          <i class="fas fa-star"> </i>
+          <i class="fas fa-star"> </i>
+          <i class="fas fa-star-half-alt"> </i>
+        </div>
+      </div>
+
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-md-4 mb-md-0 mb-4">
+
+      <div class="testimonial">
+        <!--Avatar-->
+        <div class="avatar mx-auto">
+          <img src="{% static 'dynamicpystroke/img/testimonial/christina.jpg' %}" width="150" height="150" class="rounded-circle z-depth-1 img-fluid">
+        </div>
+        <!--Content-->
+        <h6 class="font-weight-bold dark-grey-text mt-4">Christina</h6>
+        <h6 class="font-weight-normal blue-text my-3">Systems Administrator</h6>
+        <p class="font-weight-normal dark-grey-text">
+          <i class="fas fa-quote-left pr-2"></i>Dynamic PyStroke is a game changer for our enterprise application security. It will reduce a lot of security breaches.</p>
+        <!--Review-->
+        <div class="orange-text">
+          <i class="fas fa-star"> </i>
+          <i class="fas fa-star"> </i>
+          <i class="fas fa-star"> </i>
+          <i class="fas fa-star"> </i>
+          <i class="fas fa-star"> </i>
+        </div>
+      </div>
+
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-md-4">
+
+      <div class="testimonial">
+        <!--Avatar-->
+        <div class="avatar mx-auto">
+          <img src="{% static 'dynamicpystroke/img/testimonial/andrew.jpg' %}" width="150" height="150" class="rounded-circle z-depth-1 img-fluid">
+        </div>
+        <!--Content-->
+        <h6 class="font-weight-bold dark-grey-text mt-4">Andrew</h6>
+        <h6 class="font-weight-normal blue-text my-3">Application User</h6>
+        <p class="font-weight-normal dark-grey-text">
+          <i class="fas fa-quote-left pr-2"></i>With Dynamic PyStroke, I certainly don't have to worry about my account security if my password gets stolen.</p>
+        <!--Review-->
+        <div class="orange-text">
+          <i class="fas fa-star"> </i>
+          <i class="fas fa-star"> </i>
+          <i class="fas fa-star"> </i>
+          <i class="fas fa-star"> </i>
+          <i class="far fa-star"> </i>
+        </div>
+      </div>
+
+    </div>
+    <!--Grid column-->
+
+  </div>
+  <!--Grid row-->
+
+</section>
+<!-- Section: Testimonials v.3 -->
+  
+
+ 
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <div class="row">
+
+        <!-- Footer Location -->
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Location</h4>
+          <p class="lead mb-0">Claremont Graduate University
+            <br>Claremont, CA</p>
+        </div>
+
+        <!-- Footer Social Icons -->
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Follow Us</h4>
+          <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/surikaks12/Dynamic-PyStroke">
+            <i class="fab fa-fw fa-facebook-f"></i>
+          </a>
+          <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/surikaks12/Dynamic-PyStroke">
+            <i class="fab fa-fw fa-twitter"></i>
+          </a>
+        </div>
+
+        <!-- Footer About Text -->
+        <div class="col-lg-4">
+          <h4 class="text-uppercase mb-4">Dynamic PyStroke</h4>
+          <p class="lead mb-0">Was developed by a team of Masters degree students at the Claremont Graduate University.
+            <a href="https://github.com/surikaks12/Dynamic-PyStroke">Check out our github</a>.</p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Copyright Section -->
+  <section class="copyright py-4 text-center text-white">
+    <div class="container">
+      <small>Copyright &copy; Dynamic PyStroke 2019</small>
+    </div>
+  </section>
+
+  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+  <div class="scroll-to-top d-lg-none position-fixed ">
+    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+  </div>
+
+ 
+  
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'dynamicpystroke/vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'dynamicpystroke/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="{% static 'dynamicpystroke/vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+  <!-- Contact Form JavaScript -->
+  <script src="{% static 'dynamicpystroke/js/jqBootstrapValidation.js' %}"></script>
+  <script src="{% static 'dynamicpystroke/js/contact_me.js' %}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{% static 'dynamicpystroke/js/freelancer.min.js' %}"></script>
+
+</body>
+
+</html>
