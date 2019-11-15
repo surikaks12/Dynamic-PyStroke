@@ -97,6 +97,7 @@ Iteration 2 (2 Weeks):
 
 ### Burndown Chart
   Uploaded file in Repository called "Burndown-Chart.xlsm"
+
   The Burndown Chart is a representation of Milestone 1.
 
 ### Meeting Minutes
