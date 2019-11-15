@@ -1,6 +1,25 @@
 # Dynamic-PyStroke
 Behavioural Biometrics based on Keystroke Dynamics
 
+## INSTRUCTIONS:
+  Download Dynamic-PyStroke_demo.zip
+
+  Extract the django folder
+
+  Launch your command line: pip install django
+
+  cd into the unzipped django folder
+
+  cd into myproject
+
+  Run command python manage.py runserver
+
+  Copy and paste into web browser: http://127.0.0.1:8000/dynamicpystroke/
+
+  Once you have launched the website, click demo to go to the login page
+
+  To see the downloaded file, type in the password and hit the enter key. Hitting the submit button will not download the file.
+
 ## PART A
 
 ### Team Members:
@@ -74,5 +93,7 @@ Iteration 2 (2 Weeks):
 
 ### Burndown Chart
 Uploaded file in Repository called "Burndown-Chart.xlsm"
+The Burndown Chart is a representation of Milestone 1.
+
 ### Meeting Minutes
 Uploaded file in Repository called "PD Meeting Minutes.docx"
