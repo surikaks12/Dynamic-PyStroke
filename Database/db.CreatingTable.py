@@ -11,7 +11,6 @@ def CreateTable():
 
 
     ##########Creating columns in the dababase########
-    
     cur = conn.cursor()
     cur.execute("""
 
