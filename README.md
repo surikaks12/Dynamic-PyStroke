@@ -96,7 +96,7 @@ Iteration 2 (2 Weeks):
 - Current: 18 hours per week
 
 ### Burndown Chart
-  Uploaded file in Repository called "Burndown-Chart.xlsm"
+  Uploaded file in Repository called "DP_Burndown_M1.xlsx"
 
   The Burndown Chart is a representation of Milestone 1.
 
