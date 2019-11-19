@@ -1,4 +1,5 @@
 import psycopg2
+
 def InsertData():
     DB_NAME = 'ixvgfxto'
     DB_USER = 'ixvgfxto'
@@ -10,10 +11,12 @@ def InsertData():
     print ('Databse connected successfully')
 
     #########Insert into the table############
-    
+
     cur = conn.cursor()
 
-    cur.execute("INSERT INTO Users (Username, Password) VALUES('Ben', '@Ben2019')")
+    cur.execute("INSERT INTO abc VALUES('Ben', '@Ben2019')")
     conn.commit()
     print("Data inserted successfully")
     conn.close()
+
+InsertData()

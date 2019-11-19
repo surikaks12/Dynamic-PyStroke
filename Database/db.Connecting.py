@@ -12,3 +12,5 @@ def ConnectToDatabase():
 
     except:
         print('Database not connected')
+
+ConnectToDatabase()

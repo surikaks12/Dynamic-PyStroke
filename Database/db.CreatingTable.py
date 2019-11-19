@@ -14,10 +14,13 @@ def CreateTable():
     cur = conn.cursor()
     cur.execute("""
 
-    CREATE TABLE Users
+    CREATE TABLE NewTable
         (
             Username VARCHAR(50) NOT NULL,
             Password VARCHAR(50) NOT NULL
         )
 
     """)
+    print('Created table')
+
+CreateTable()
