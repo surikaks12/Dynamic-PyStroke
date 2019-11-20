@@ -17,16 +17,12 @@ def CreateTable():
     try:
         cur.execute("""
 
-        CREATE TABLE NewTable
-            (
-                Username VARCHAR(100) NOT NULL,
-                Password VARCHAR(5000) NOT NULL
-            )
+        DROP TABLE NewTable
 
         """)
-        print('Created table')
+        print('Dropped table')
     except:
-        print('unable to create the table')
+        print('unable to drop the table')
     conn.commit()
     conn.close()
     cur.close()

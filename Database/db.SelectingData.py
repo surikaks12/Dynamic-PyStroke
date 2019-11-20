@@ -13,7 +13,7 @@ def SelectData():
 
     cur = conn.cursor()
 
-    cur.execute("SELECT username, password FROM Users")
+    cur.execute("SELECT * FROM abc")
 
     rows = cur.fetchall()
 
@@ -21,7 +21,7 @@ def SelectData():
         print("Username: " + data[0])
         print("Password: " + data[1])
 
-    print ("Data sected successfully")
+    print ("Data selcted successfully")
     conn.close()
-    
+
 SelectData()

@@ -14,7 +14,7 @@ def InsertData():
 
     cur = conn.cursor()
 
-    cur.execute("INSERT INTO abc VALUES('Ben', '@Ben2019')")
+    cur.execute("INSERT INTO NewTable VALUES('Armin ', '@Armin129876')")
     conn.commit()
     print("Data inserted successfully")
     conn.close()
