@@ -22,7 +22,6 @@ def CreateTable():
                 Username VARCHAR(100) NOT NULL,
                 Password VARCHAR(5000) NOT NULL
             )
-
         """)
         print('Created table')
     except:

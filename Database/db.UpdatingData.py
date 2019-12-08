@@ -17,5 +17,5 @@ def UpdateData():
 
     print("Data updated successfully")
     print("Total row affected: " + str(cur.rowcount))
-    
+
 Update()
