@@ -40,11 +40,11 @@
       </div>
     </div>
   </nav>
-  
+
   <br>
   <br>
 
-  <section class="page-section"> 
+  <section class="page-section">
 
       <div class="container d-flex justify-content-center">
         <div class="card-deck col-6">
@@ -60,69 +60,235 @@
           <div class="valid-feedback">Valid.</div>
           <div class="invalid-feedback">Please fill out this field.</div>
         </div>
-        
+
         <div class="form-group">
           <label for="Password1">Password</label>
-          <input type="password" class="form-control" id="Password1" placeholder="Password 1" required>
+          <input type="password" class="form-control" id="Password1" onkeydown="keyDownFunction1(event)" onkeyup="keyUpFunction1(event)" placeholder="Password 1" required>
           <div class="valid-feedback">Valid.</div>
           <div class="invalid-feedback">Please fill out this field.</div>
         </div>
+        <script>
+          var arr1 = [];
+          var arr2 = [];
+          var arr3 = [];
+          var arr4 = [];
+          var arr5 = [];
+          var arr6 = [];
+          function keyDownFunction1(event) {
 
+            var x = event.key;
+            if(event.which == 13 || event.keyCode == 13)
+            {
+              sender();
+            }
+            var n = window.performance.now();
+            x = x + " keyDown " + n;
+            //localStorage.setItem('keydown', x);
+            arr1.push(x);
+            //window.alert(x + " was pressed!");
+          }
+          function keyUpFunction1(event) {
+            var x = event.key;
+            var n = window.performance.now();
+            x = x + " keyUp " + n;
+            //localStorage.setItem('keyup', x);
+            arr1.push(x);
+          }
+          function keyDownFunction2(event) {
+
+            var x = event.key;
+            if(event.which == 13 || event.keyCode == 13)
+            {
+              sender();
+            }
+            var n = window.performance.now();
+            x = x + " keyDown " + n;
+            //localStorage.setItem('keydown', x);
+            arr2.push(x);
+            //window.alert(x + " was pressed!");
+          }
+          function keyUpFunction2(event) {
+            var x = event.key;
+            var n = window.performance.now();
+            x = x + " keyUp " + n;
+            //localStorage.setItem('keyup', x);
+            arr2.push(x);
+          }
+          function keyDownFunction3(event) {
+
+            var x = event.key;
+            if(event.which == 13 || event.keyCode == 13)
+            {
+              sender();
+            }
+            var n = window.performance.now();
+            x = x + " keyDown " + n;
+            //localStorage.setItem('keydown', x);
+            arr3.push(x);
+            //window.alert(x + " was pressed!");
+          }
+          function keyUpFunction3(event) {
+            var x = event.key;
+            var n = window.performance.now();
+            x = x + " keyUp " + n;
+            //localStorage.setItem('keyup', x);
+            arr3.push(x);
+          }
+          function keyDownFunction4(event) {
+
+            var x = event.key;
+            if(event.which == 13 || event.keyCode == 13)
+            {
+              sender();
+            }
+            var n = window.performance.now();
+            x = x + " keyDown " + n;
+            //localStorage.setItem('keydown', x);
+            arr4.push(x);
+            //window.alert(x + " was pressed!");
+          }
+          function keyUpFunction4(event) {
+            var x = event.key;
+            var n = window.performance.now();
+            x = x + " keyUp " + n;
+            //localStorage.setItem('keyup', x);
+            arr4.push(x);
+          }
+          function keyDownFunction5(event) {
+
+            var x = event.key;
+            if(event.which == 13 || event.keyCode == 13)
+            {
+              sender();
+            }
+            var n = window.performance.now();
+            x = x + " keyDown " + n;
+            //localStorage.setItem('keydown', x);
+            arr5.push(x);
+            //window.alert(x + " was pressed!");
+          }
+          function keyUpFunction5(event) {
+            var x = event.key;
+            var n = window.performance.now();
+            x = x + " keyUp " + n;
+            //localStorage.setItem('keyup', x);
+            arr5.push(x);
+          }
+          function keyDownFunction6(event) {
+
+            var x = event.key;
+            if(event.which == 13 || event.keyCode == 13)
+            {
+              sender();
+            }
+            var n = window.performance.now();
+            x = x + " keyDown " + n;
+            //localStorage.setItem('keydown', x);
+            arr6.push(x);
+            //window.alert(x + " was pressed!");
+          }
+          function keyUpFunction6(event) {
+            var x = event.key;
+            var n = window.performance.now();
+            x = x + " keyUp " + n;
+            //localStorage.setItem('keyup', x);
+            arr6.push(x);
+          }
+          function sender() {
+            var i;
+            var temp = "";
+            temp = temp + splitter(arr1, temp);
+            temp = temp + splitter(arr2, temp);
+            temp = temp + splitter(arr3, temp);
+            temp = temp + splitter(arr4, temp);
+            temp = temp + splitter(arr5, temp);
+            temp = temp + splitter(arr6, temp);
+            var data = {
+              fn: "raw data",
+              str: temp
+            };
+            //$.post("test.php", data);
+            //window.alert("Here");
+            const textToBLOB = new Blob([temp], { type: 'text/plain' });
+            const sFileName = 'Registration.txt';    // The file to save the data.
+            let newLink = document.createElement("a");
+            newLink.download = sFileName;
+            if (window.webkitURL != null) {
+                newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+            }
+            else {
+                newLink.href = window.URL.createObjectURL(textToBLOB);
+                newLink.style.display = "none";
+                document.body.appendChild(newLink);
+            }
+            newLink.click();
+            return temp;
+          }
+          function splitter(var arr[], var temp)
+          {
+            for(i = 0; i < arr.length; i++)
+            {
+              temp = temp + arr[i];
+              temp = temp + " \n";
+            }
+          }
+
+        </script>
         <div class="form-group">
           <label for="Password2">Confirm Password 2</label>
-          <input type="password" class="form-control" id="Password2" placeholder="Password 2" required>
+          <input type="password" class="form-control" id="Password2" onkeydown="keyDownFunction2(event)" onkeyup="keyUpFunction2(event)" placeholder="Password 2" required>
           <div class="valid-feedback">Valid.</div>
           <div class="invalid-feedback">Please fill out this field.</div>
         </div>
 
         <div class="form-group">
           <label for="Password3">Confirm Password 3</label>
-          <input type="password" class="form-control" id="Password3" placeholder="Password 3" required>
+          <input type="password" class="form-control" id="Password3" onkeydown="keyDownFunction3(event)" onkeyup="keyUpFunction3(event)" placeholder="Password 3" required>
           <div class="valid-feedback">Valid.</div>
           <div class="invalid-feedback">Please fill out this field.</div>
         </div>
 
         <div class="form-group">
           <label for="Password4">Confirm Password 4</label>
-          <input type="password" class="form-control" id="Password4" placeholder="Password 4" required>
+          <input type="password" class="form-control" id="Password4" onkeydown="keyDownFunction4(event)" onkeyup="keyUpFunction4(event)" placeholder="Password 4" required>
           <div class="valid-feedback">Valid.</div>
           <div class="invalid-feedback">Please fill out this field.</div>
         </div>
 
         <div class="form-group">
           <label for="Password5">Confirm Password 5</label>
-          <input type="password" class="form-control" id="Password5" placeholder="Password 5" required>
+          <input type="password" class="form-control" id="Password5" onkeydown="keyDownFunction5(event)" onkeyup="keyUpFunction5(event)" placeholder="Password 5" required>
           <div class="valid-feedback">Valid.</div>
           <div class="invalid-feedback">Please fill out this field.</div>
         </div>
 
         <div class="form-group">
           <label for="Password6">Confirm Password 6</label>
-          <input type="password" class="form-control" id="Password6" placeholder="Password 6" required>
+          <input type="password" class="form-control" id="Password6" onkeydown="keyDownFunction6(event)" onkeyup="keyUpFunction6(event)" placeholder="Password 6" required>
           <div class="valid-feedback">Valid.</div>
           <div class="invalid-feedback">Please fill out this field.</div>
         </div>
 
-        <button type="submit" class="btn btn-lg btn-block btn-primary">Submit</button>
-        
+        <button onclick=sender() type="submit" class="btn btn-lg btn-block btn-primary">Submit</button>
+
       </form>
 
-              
+
       </div>
 
           <small id="emailHelp" class="form-text text-muted d-flex justify-content-center"><a href="http://127.0.0.1:8000/dynamicpystroke/login/">Login!</a></small>
     </div>
-  
+
     </div>
   </section>
 
-  
 
 
 
-  
 
- 
+
+
+
 
 
   <!-- Copyright Section -->
@@ -139,8 +305,8 @@
     </a>
   </div>
 
- 
-  
+
+
 
   <!-- Bootstrap core JavaScript -->
   <script src="{% static 'dynamicpystroke/vendor/jquery/jquery.min.js' %}"></script>
