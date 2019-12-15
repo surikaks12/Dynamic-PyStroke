@@ -1,28 +1,53 @@
 # Dynamic-PyStroke
 Behavioural Biometrics based on Keystroke Dynamics
 
-## INSTRUCTIONS:
-  Download Dynamic-PyStroke_demo.zip
+## How to run the application:
 
-  Extract the django folder
+### Environment to run the application:
+- Python 3.7.8
+- Pip 18.1
+- Virtual Environment 16.0.0
 
-  Launch your command line: pip install django
+### Run Application command:
+- from application root activate the virtual environment
 
-  cd into the unzipped django folder
+#### Mac OS
+source ./venv/bin/activate
+#### Windows OS
+execute/run "activate" file
 
-  cd into myproject
+### Run Application command
 
-  Run command python manage.py runserver
+cd into Dynamic-PyStroke_NotWorking/django/myprojects
 
-  Copy and paste into web browser: http://127.0.0.1:8000/dynamicpystroke/
+Run command python manage.py runserver
 
-  Once you have launched the website, click demo to go to the login page
+Copy and paste into web browser: http://127.0.0.1:8000/dynamicpystroke/
 
-  To see the downloaded file, type in the password and hit the enter key. Hitting the submit button will not download the file.
+Once you have launched the website, click demo to go to the login page
+
+To see the downloaded file, type in the password and hit the enter key. Hitting the submit button will not download the file.
 
 ### Test:
-At this stage of the project, the downloaded file is a test which demonstrates functionality of the program.
+- To test the extractor:
+ cd into the extractor folder then run command pytest -v test_extractor.py
 
+Unable to run tests for django due to lack of connectivity to the database.
+
+### Coverage:
+- How to run test coverage After virutal environment activation, from inside the extractor folder, Run "pytest --cov=helper test_extractor.py"
+- To view the HTML representation of the coverage cd into extractor/htmlcov and open helper_py.html
+
+## Install FAQ
+- Django not found/ installed
+Some user reported that in the first run Django was not loaded from Virtual Environment. In such case please install Django after virtual environment activation by
+
+pip install Django
+
+- plugin/ module not found (ModuleNotFoundError)
+Due to the conflict related to python version some plugin might not load properly from virtual enviroment. To fix such issue, install the plugin required by project which is listed in file "requrement.txt" located in repository. Single command installer is as following.
+
+pip install -r ./Requirements.txt
 
 ## PART A
 
@@ -89,6 +114,11 @@ Iteration 2 (2 Weeks):
 - Key Listener
 - Database
 
+### Milestone 2
+1. Extracting Data
+2. Machine Learning
+3. Secondary Authentication
+
 ### Velocity
 - Timeline: 4 Weeks to Milestone 1, 5 Weeks to Milestone 2
 - Starting Velocity: 45%
@@ -96,9 +126,16 @@ Iteration 2 (2 Weeks):
 - Current: 18 hours per week
 
 ### Burndown Chart
-  Uploaded file in Repository called "DP_Burndown_M1.xlsx"
+  Uploaded file in Repository called "DPBurndown_ChartM2.png"
 
-  The Burndown Chart is a representation of Milestone 1.
+  The Burndown Chart is a representation of Milestone 2.
+
+note: Uploaded file in Repository called "DP_Burndown_M1.xlsx" contains burndown chart for Milestone 1.
 
 ### Meeting Minutes
 Uploaded file in Repository called "PD Meeting Minutes.docx"
+
+### Lessons Learned:
+- How to incorporate time management and teamwork into software development.
+- Using github to synchronize work on the coding aspect of the project.
+- How to work around problems or fix them within a project timeframe.
