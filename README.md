@@ -8,7 +8,7 @@ Behavioural Biometrics based on Keystroke Dynamics
 - Pip 18.1
 - Virtual Environment 16.0.0
 
-### Run Application command:
+### Run Application Command:
 - from application root activate the virtual environment
 
 #### Mac OS
@@ -16,8 +16,9 @@ source ./venv/bin/activate
 #### Windows OS
 execute/run "activate" file
 
-### Run Application command
+### Run Application:
 
+- Part 1: Website
 cd into Dynamic-PyStroke_NotWorking/django/myprojects
 
 Run command python manage.py runserver
@@ -27,6 +28,26 @@ Copy and paste into web browser: http://127.0.0.1:8000/dynamicpystroke/
 Once you have launched the website, click demo to go to the login page
 
 To see the downloaded file, type in the password and hit the enter key. Hitting the submit button will not download the file.
+
+- Part 2: Machine Learning
+
+Click on below link to test the machine learning capabilities of this software.
+
+https://services.azureml.net/workspaces/a40da94bd376443090efb7133651f239/webservices/41fa7508139c43d0ae12fdd42f1d7af8/endpoints/default/test
+
+User below credentials to sign in:
+
+username: dynamic-pystroke@outlook.com
+
+password: 2019IST303
+
+Test your extracted data by inserting it in this page. To do this, click on the CSV icon and past your data in the space provided. Two sample CSV data files "login Sample Data- Armin" and "login Sample Data- Surya" are included in project repository in extractor/extractor folder to demonstrate this feature.
+
+If you would like to explore this experiment in your Azure studio, go to below link and open the experiment in your Azure studio:
+
+https://gallery.azure.ai/Experiment/Dynamic-PySroke-Positive-Multiclass-Decision-Forest-NewDataset-Predictive-Exp
+
+Note that an active (free) account is needed for this. You may run the same tests in your account.
 
 ### Test:
 - To test the extractor:
